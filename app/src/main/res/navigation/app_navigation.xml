@@ -13,6 +13,10 @@
         <action
             android:id="@+id/to_second_step_fragment_action"
             app:destination="@+id/second_step_fragment_destination" />
+
+        <action
+            android:id="@+id/action_home_fragment_destination_to_secondStepActivity"
+            app:destination="@id/second_step_activity_destination" />
     </fragment>
 
     <fragment
