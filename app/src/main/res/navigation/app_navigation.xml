@@ -15,8 +15,12 @@
             app:destination="@+id/second_step_fragment_destination" />
 
         <action
-            android:id="@+id/action_home_fragment_destination_to_secondStepActivity"
-            app:destination="@id/second_step_activity_destination" />
+            android:id="@+id/action_home_fragment_destination_to_second_step_activity"
+            app:destination="@id/second_step_activity_destination"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
 
     <fragment

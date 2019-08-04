@@ -3,6 +3,7 @@ package ru.rebrain.navigation
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
 import kotlinx.android.synthetic.main.home_fragment.*
@@ -31,8 +32,11 @@ class HomeFragment : Fragment() {
         next_frag_btn.setOnClickListener {
             findNavController().navigate(R.id.second_step_fragment_destination, null, options)
         }
-        next_activity_btn.setOnClickListener {
-            findNavController().navigate(R.id.second_step_activity_destination, null)
-        }
+        next_activity_btn.setOnClickListener(
+                Navigation.createNavigateOnClickListener(
+                        R.id.action_home_fragment_destination_to_second_step_activity,
+                        null
+                )
+        )
     }
 }
