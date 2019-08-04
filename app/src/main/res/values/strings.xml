@@ -2,6 +2,8 @@
     <string name="app_name">Jetpack Navigation Sample</string>
     <string name="fragment_1_title">Первый фрагмент</string>
     <string name="fragment_2_title">Второй фрагмент</string>
+    <string name="activity_1_title">Вторая активити</string>
 
     <string name="fragment_1_to_2_btn_text">Переход на второй фрагмент</string>
+    <string name="activity_1_to_2_btn_text">Переход на вторую актвити</string>
 </resources>

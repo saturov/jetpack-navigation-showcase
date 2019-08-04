@@ -22,5 +22,8 @@ class HomeFragment : Fragment() {
         next_frag_btn.setOnClickListener {
             findNavController().navigate(R.id.second_step_fragment_destination, null)
         }
+        next_activity_btn.setOnClickListener {
+            findNavController().navigate(R.id.second_step_activity_destination, null)
+        }
     }
 }

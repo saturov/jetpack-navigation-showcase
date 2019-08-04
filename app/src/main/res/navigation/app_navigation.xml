@@ -20,4 +20,10 @@
         android:name="ru.rebrain.navigation.SecondStepFragment"
         android:label="@string/fragment_2_title"
         tools:layout="@layout/second_step_fragment" />
+
+    <activity
+        android:id="@+id/second_step_activity_destination"
+        android:name="ru.rebrain.navigation.SecondStepActivity"
+        android:label="@string/activity_1_title"
+        tools:layout="@layout/activity_second_step" />
 </navigation>

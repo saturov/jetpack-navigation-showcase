@@ -24,7 +24,7 @@
         android:id="@+id/next_frag_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/next_activity_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="wrap"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,4 +32,17 @@
         app:layout_constraintWidth_default="wrap"
         app:layout_constraintVertical_chainStyle="packed"
         android:text="@string/fragment_1_to_2_btn_text"/>
+
+    <Button
+        android:id="@+id/next_activity_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_frag_btn"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:text="@string/activity_1_to_2_btn_text"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
