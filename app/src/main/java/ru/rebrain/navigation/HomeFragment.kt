@@ -3,6 +3,8 @@ package ru.rebrain.navigation
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.home_fragment.*
 
 class HomeFragment : Fragment() {
 
@@ -13,5 +15,12 @@ class HomeFragment : Fragment() {
     ): View? {
         setHasOptionsMenu(true)
         return inflater.inflate(R.layout.home_fragment, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        next_frag_btn.setOnClickListener {
+            findNavController().navigate(R.id.second_step_fragment_destination, null)
+        }
     }
 }

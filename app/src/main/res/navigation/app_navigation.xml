@@ -8,5 +8,16 @@
         android:id="@+id/home_fragment_destination"
         android:name="ru.rebrain.navigation.HomeFragment"
         android:label="@string/fragment_1_title"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/to_second_step_fragment_action"
+            app:destination="@+id/second_step_fragment_destination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_step_fragment_destination"
+        android:name="ru.rebrain.navigation.SecondStepFragment"
+        android:label="@string/fragment_2_title"
+        tools:layout="@layout/second_step_fragment" />
 </navigation>
