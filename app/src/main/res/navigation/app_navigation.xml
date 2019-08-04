@@ -15,12 +15,16 @@
             app:destination="@+id/second_step_fragment_destination" />
 
         <action
-            android:id="@+id/action_home_fragment_destination_to_second_step_activity"
+            android:id="@+id/to_second_step_activity_action"
             app:destination="@id/second_step_activity_destination"
             app:enterAnim="@anim/fade_in"
             app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/fade_in"
             app:popExitAnim="@anim/fade_out" />
+
+        <argument
+            android:name="source_screen_index"
+            app:argType="integer" />
     </fragment>
 
     <fragment
@@ -33,5 +37,10 @@
         android:id="@+id/second_step_activity_destination"
         android:name="ru.rebrain.navigation.SecondStepActivity"
         android:label="@string/activity_1_title"
-        tools:layout="@layout/activity_second_step" />
+        tools:layout="@layout/activity_second_step">
+
+        <argument
+            android:name="source_screen_index"
+            app:argType="integer" />
+    </activity>
 </navigation>

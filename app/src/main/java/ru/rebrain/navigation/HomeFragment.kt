@@ -1,7 +1,9 @@
 package ru.rebrain.navigation
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
@@ -32,10 +34,12 @@ class HomeFragment : Fragment() {
         next_frag_btn.setOnClickListener {
             findNavController().navigate(R.id.second_step_fragment_destination, null, options)
         }
+
+        val action =
+                HomeFragmentDirections.toSecondStepActivityAction(3)
         next_activity_btn.setOnClickListener(
                 Navigation.createNavigateOnClickListener(
-                        R.id.action_home_fragment_destination_to_second_step_activity,
-                        null
+                        action
                 )
         )
     }
