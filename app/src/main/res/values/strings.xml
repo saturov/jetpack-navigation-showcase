@@ -6,4 +6,6 @@
 
     <string name="fragment_1_to_2_btn_text">Переход на второй фрагмент</string>
     <string name="activity_1_to_2_btn_text">Переход на вторую актвити</string>
+
+    <string name="settings">Настройки</string>
 </resources>
