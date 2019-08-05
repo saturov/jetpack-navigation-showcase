@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         }
 
         val action =
-                HomeFragmentDirections.toSecondStepActivityAction(3)
+                HomeFragmentDirections.toSecondStepActivityAction().setSourceScreenIndex(3)
         next_activity_btn.setOnClickListener(
                 Navigation.createNavigateOnClickListener(
                         action

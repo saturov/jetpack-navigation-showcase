@@ -41,6 +41,7 @@
 
         <argument
             android:name="source_screen_index"
+            android:defaultValue="1"
             app:argType="integer" />
     </activity>
 </navigation>
